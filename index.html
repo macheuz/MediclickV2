@@ -24,6 +24,11 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
   <!-- Variables CSS Files. Uncomment your preferred color scheme -->
   <link href="assets/css/variables.css" rel="stylesheet">
@@ -114,7 +119,54 @@
       </div>
     </section><!-- End Primeiro Bloco -->
 
+
+<!-- ============== Slider ======================-->
+    <div id="myCarousel" class="carousel slide d-none d-md-block" data-ride="carousel" data-interval="4000">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ul>
       
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active slider-right">
+          <img src="assets/img/slider1.jpeg" alt="Image 1">
+          <div class="carousel-caption">
+            <h3>Telemedicina ao seu alcance</h3>
+            <p>Consultas online 24H</p>
+        </div>
+        </div>
+        <div class="carousel-item slider-left2">
+          <img src="assets/img/slider2.jpeg" alt="Image 2">
+          <div class="carousel-caption">
+            <h3>Nos especializamos<br> em saúde digital</h3>
+            <p>Para estarmos ao seu lado na hora que você precisar</p>
+        </div>
+        </div>
+        <!--
+        <div class="carousel-item slider-left">
+          <img src="assets/img/slider3.jpeg" alt="Image 3">
+          <div class="carousel-caption">
+            <p>A saúde e a<br> motivação de seus<br> colaboradores em dia</p>
+        </div>
+        </div>
+      </div>
+      -->
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+
+ <!--=============Fim Slider =================-->
+
+
 
 
 
@@ -128,7 +180,7 @@
           <div class="col-12 col-sm-4 col-md-3 d-flex" data-aos="zoom-out" data-aos-delay="200">
             <div class="service-item position-relative d-flex justify-content-start">
               <div class="icon">
-                <img class="d-flex img-fluid" src="assets/img/icons/icon-3.png" width="50" height="50">
+                <img class="d-flex img-fluid" src="assets/img/icons/icon-4.png" width="60" height="60">
               </div>
               <h4>Assistência Imediata</h4>
               <p>Atendimento 24h por dia,<br> todos os dias da semana</p>
@@ -138,7 +190,7 @@
           <div class="col-12 col-sm-4 col-md-3 d-flex" data-aos="zoom-out" data-aos-delay="400">
             <div class="service-item position-relative d-flex justify-content-start">
               <div class="icon">
-                <img class="d-flex img img-fluid" src="assets/img/icons/icon-2.png" width="50" height="50">
+                <img class="d-flex img img-fluid" src="assets/img/icons/icon-2.png" width="60" height="60">
               </div>
               <h4>Redução<br> de custos</h4>
               <p>Não há exposição à ambientes potencialmente contaminados, proporcionando maior segurança e proteção à sua saúde</p>
@@ -150,7 +202,7 @@
           <div class="col-12 col-sm-4 col-md-3 d-flex" data-aos="zoom-out" data-aos-delay="200">
             <div class="service-item position-relative d-flex justify-content-start">
               <div class="icon">
-                <img class="d-flex img-fluid" src="assets/img/icons/icon-3.png" width="50" height="50">
+                <img class="d-flex img-fluid" src="assets/img/icons/icon-3.png" width="60" height="60">
               </div>
               <h4>Economia<br> de tempo</h4>
               <p>As consultas podem ser realizadas da sua casa, sem perder tempo com deslocamentos</p>
@@ -160,9 +212,9 @@
           <div class="col-12 col-sm-4 col-md-3 d-flex" data-aos="zoom-out" data-aos-delay="400">
             <div class="service-item position-relative d-flex justify-content-start">
               <div class="icon">
-                <img class="d-flex img img-fluid" src="assets/img/icons/icon-1.png" width="50" height="50">
+                <img class="d-flex img img-fluid" src="assets/img/icons/icon-1.png" width="60" height="60">
               </div>
-              <h4>Sem riscos</h4>
+              <h4>Sem risco à<br> contaminação</h4>
               <p>Não há exposição à ambientes potencialmente contaminados, proporcionando maior segurança e proteção à sua saúde</p>
             </div>
           </div><!-- End Service Item -->
@@ -173,6 +225,29 @@
 
       </div>
     </section><!-- End Featured Services Section -->
+
+
+<!-- Botão para abrir o overlay -->
+
+
+<!-- Overlay -->
+<div class="overlay">
+  <div class="play-btn">
+    <i class="bi bi-play"></i>
+  </div>
+</div>
+
+<div class="modal-container">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <iframe id="video" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!--fim over funciona-->
+
+
+    
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -196,7 +271,7 @@
 
             <!-- Tabs -->
             <ul class="nav nav-pills mb-3 tabs">
-              <li><a class="nav-link active text-center" data-bs-toggle="pill" href="#tab1">Benefícios<br>para Empresa</a></li>
+              <li><a class="nav-link active text-center" data-bs-toggle="pill" href="#tab1">Benefícios<br>para a Empresa</a></li>
               <li><a class="nav-link text-center" data-bs-toggle="pill" href="#tab2">Benefícios<br> para o Usuário</a></li>
               <li><a class="nav-link text-center" data-bs-toggle="pill" href="#tab3">Equipe<br>Médica</a></li>
             </ul><!-- End Tabs -->
@@ -329,7 +404,7 @@
             <h3 class="text-center">O futuro da sua consulta médica está aqui</h3>
             <p></p>
             <p class="text-center"> A telemedicina vem mudando a forma como as pessoas acessam a saúde, oferecendo um serviço à distância mais rápido, fácil e seguro. <br><br>Com a opção de consultas online, você pode marcar uma consulta com seu médico sem sair de casa, economizando tempo e evitando filas de espera. Além disso, as avançcadas tecnologias utilizadas na telemedicina garantem uma excelente qualidade de atendimento.<br><br> Não perca mais tempo e experimente essa nova forma de cuidar da sua saúde. O futuro da medicina já chegou!</p>
-            <a class="cta-btn align-self-center" href="#contato">Saiba mais</a>
+            <a class="cta-btn align-self-center" href="#contato">Fale Conosco</a>
           </div>
 
           <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
@@ -516,7 +591,7 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
             <div class="content px-xl-5">
-              <h3 class="text-center">Perguntas<strong> Frequentes</strong></h3>
+              <h3 class="text-center">Perguntas Frequentes</h3>
               <p class="text-center">
                 
               </p>
@@ -647,12 +722,12 @@
           <div class="col-lg-4">
 
             <div class="info">
-              <h3 class="text-center">Meios de contato</h3>
+              <h3 class="text-center">Contato</h3>
               <div class="info-item d-flex justify-content-sm-around align-items-center">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div class="col-md-8">
                   <h4 class="text-center">Matriz:</h4>
-                  <p class="text-center">Rua espiríto Santo, 916, Centro, Juiz de Fora</p>
+                  <p class="text-center">Rua Braz Bernardino, 105, Centro, <br>Juiz de Fora - MG</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -668,7 +743,7 @@
                 <i class="bi bi-phone flex-shrink-0 justify-content-center text-center"></i>
                 <div class="col-md-8">
                   <h4 class="text-center">Telefone:</h4>
-                  <p class="text-center">(32) 3213 - 9000</p>
+                  <p class="text-center">(32) 3213-9000</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -726,6 +801,7 @@
           <a href="https://pt-br.facebook.com/MediclickBR/" class="facebook"><i class="bi bi-facebook"></i></a>
           <a href="https://www.instagram.com/mediclick_jf/" class="instagram"><i class="bi bi-instagram"></i></a>
           <a href="https://www.linkedin.com/company/mediclick-app/about/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.linkedin.com/company/mediclick-app/about/" class="linkedin"><i class="bi bi-youtube"></i></a>
         </div>
 
       </div>
