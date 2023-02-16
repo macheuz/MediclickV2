@@ -54,26 +54,24 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top" data-scrollto-offset="0">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
+    <div style="width: 85%;" class="container-fluid d-flex align-items-left justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logoMediclick.png" alt=""> 
+        <img class="img-fluid logo-sm " src="assets/img/logoMediclick.png" alt=""> 
         <!--<h1>HeroBiz<span>.</span></h1>-->
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-
-          <li class="nav-link scrollto"><a href="index.html#hero-fullscreen"><span>Home</span> <i class="nav-link scrollto"></i></a>
             
           </li>
-
+          <li><a class="nav-link scrollto" href="index.html#hero-fullscreen">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">Sobre</a></li>
           <li><a class="nav-link scrollto" href="index.html#pricing">Planos</a></li>  
           <li><a class="nav-link scrollto" href="blog.html">Blog</a></li>
           <li><a class="nav-link scrollto" href="index.html#contato">Contato</a></li>
-          <li><a class="btn-getstarted scrollto" href="https://admin.mediclick.com.br/users/sign_in">Área restrita</a></li>
+          <li style="margin-left: 3%;"><a class="btn-getstarted scrollto" href="https://admin.mediclick.com.br/users/sign_in">Área restrita</a></li>
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
@@ -83,13 +81,11 @@
     </div>
   </header><!-- End Header -->
 
-  <section id="hero-fullscreen" class="hero-fullscreen d-flex align-items-center justify-content-center">
-    <div id="containerTitulo" class="container d-flex flex-column align-items-center justify-content-center position-relative" data-aos="zoom-out">
-      <img src="assets/img/logoMediclick.png" alt="logo do mediclick nas cores laranja e azul" class="img-fluid img-small" id="imagemTitulo" > 
-      <p id="paragrafoTitulo">Cuidar da sua saúde nunca foi tão fácil e acessível</p>
-      <div class="d-flex">
-        <a href="#pricing" class="btn-get-started scrollto">Conheça nossos planos</a>
-        
+  <section  id="hero-fullscreen" class="hero-fullscreen d-flex align-items-baseline justify-content-center">
+    <div id="containerTitulo" class="container d-flex flex-column align-items-center justify-content-start justify-content-lg-center position-relative" data-aos="zoom-out">
+      <p style="" id="paragrafoTitulo">Cuidar da sua saúde nunca foi<br> tão fácil e acessível</p>
+      <div class="d-flex align-baseline">
+
           <a href="https://youtu.be/q6EpFf5Chwk" class="glightbox btn-watch-video d-flex align-items-center text-center"><i class="bi bi-play-circle"></i><span id="spanTitulo" class="text-center" >Apresentação</span></a>
         
         
@@ -120,16 +116,16 @@
     </section><!-- End Primeiro Bloco -->
 
 
-<!-- ============== Slider ======================-->
+<!-- ============== Slider ======================
     <div id="myCarousel" class="carousel slide d-none d-md-block" data-ride="carousel" data-interval="4000">
-      <!-- Indicators -->
+     
       <ul class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ul>
       
-      <!-- The slideshow -->
+    
       <div class="carousel-inner">
         <div class="carousel-item active slider-right">
           <img src="assets/img/slider1.jpeg" alt="Image 1">
@@ -145,7 +141,7 @@
             <p>Para estarmos ao seu lado na hora que você precisar</p>
         </div>
         </div>
-        <!--
+      
         <div class="carousel-item slider-left">
           <img src="assets/img/slider3.jpeg" alt="Image 3">
           <div class="carousel-caption">
@@ -153,8 +149,8 @@
         </div>
         </div>
       </div>
-      -->
-      <!-- Left and right controls -->
+   
+  
       <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </a>
@@ -164,7 +160,7 @@
     </div>
   </div>
 
- <!--=============Fim Slider =================-->
+ =================-->
 
 
 
@@ -230,7 +226,7 @@
 <!-- Botão para abrir o overlay -->
 
 
-<!-- Overlay -->
+<!-- Overlay 
 <div class="overlay">
   <div class="play-btn">
     <i class="bi bi-play"></i>
@@ -244,7 +240,7 @@
   </div>
 </div>
 
-<!--fim over funciona-->
+fim over funciona-->
 
 
     
@@ -254,8 +250,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Sobre o Mediclick</h2>
-          <p style="color: var(--color-secondary);">Somos um grupo de empresas e profissionais com larga experiência em saúde pública e privada.<br>Com a crescente necessidade de atendimento rápido e eficiente, criamos o Mediclick para atender você a qualquer hora e lugar, utilizando as mais avançadas tecnologias, de uma forma humanizada e acessível.</p>
+          <h2 style="font-size: 28px;">Sobre o Mediclick</h2>
+          <p class="text-left" style="color: var(--color-secondary);">Somos um grupo de empresas e profissionais com larga experiência em saúde pública e privada.<br>Com a crescente necessidade de atendimento rápido e eficiente, criamos o Mediclick para atender você a qualquer hora e lugar, utilizando as mais avançadas tecnologias, de uma forma humanizada e acessível.</p>
         </div>
 
         <div class="row g-4 g-lg-5 sumir" data-aos="fade-up" data-aos-delay="200">
@@ -281,9 +277,9 @@
 
               <div class="tab-pane fade show active equipeLista" id="tab1">
                 <br>
-                <p>Nos tempos atuais, está bastante destacada a relevância e atenção que as empresas devem dar ao 
+                <p class="text-left">Nos tempos atuais, está bastante destacada a relevância e atenção que as empresas devem dar ao 
                   seu principal patrimônio: <strong>seus colaboradores</strong></p>
-                <p>Ter a equipe motivada, feliz e com a certeza de que estão sendo bem cuidados e protegidos gera uma série de desdobramentos positivos e benefícios para a empresa, dentre os quais:</p>
+                <p class="text-left">Ter a equipe motivada, feliz e com a certeza de que estão sendo bem cuidados e protegidos gera uma série de desdobramentos positivos e benefícios para a empresa, dentre os quais:</p>
 
                 <ul>
                   <li><i class="bi bi-check2"></i>Diminui o absenteísmo na empresa, causado por doenças e enfermidades ou devido à problemas emocionais causados por questões familiares, financeiras ou pessoais.</li>
@@ -401,15 +397,15 @@
         <div class="row g-5">
 
           <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center align-items-center order-last order-md-first">
-            <h3 class="text-center">O futuro da sua consulta médica está aqui</h3>
+            <h3 style="font-size: 28px;" class="text-center">O futuro da sua consulta médica está aqui</h3>
             <p></p>
-            <p class="text-center"> A telemedicina vem mudando a forma como as pessoas acessam a saúde, oferecendo um serviço à distância mais rápido, fácil e seguro. <br><br>Com a opção de consultas online, você pode marcar uma consulta com seu médico sem sair de casa, economizando tempo e evitando filas de espera. Além disso, as avançcadas tecnologias utilizadas na telemedicina garantem uma excelente qualidade de atendimento.<br><br> Não perca mais tempo e experimente essa nova forma de cuidar da sua saúde. O futuro da medicina já chegou!</p>
+            <p class="text-justify text-md-center"> A telemedicina vem mudando a forma como as pessoas acessam a saúde, oferecendo um serviço à distância mais rápido, fácil e seguro. <br><br>Com a opção de consultas online, você pode marcar uma consulta com seu médico sem sair de casa, economizando tempo e evitando filas de espera. Além disso, as avançcadas tecnologias utilizadas na telemedicina garantem uma excelente qualidade de atendimento.<br><br> Não perca mais tempo e experimente essa nova forma de cuidar da sua saúde. O futuro da medicina já chegou!</p>
             <a class="cta-btn align-self-center" href="#contato">Fale Conosco</a>
           </div>
 
           <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
             <div class="img">
-              <img src="assets/img/cta.jpg" alt="" class="img-fluid">
+              <img src="assets/img/cta.jpeg" alt="" class="img-fluid">
             </div>
           </div>
 
@@ -432,7 +428,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Nossos Planos</h2>
+          <h2 style="font-size: 28px;">Nossas soluções</h2>
           <p></p>
         </div>
 
@@ -722,9 +718,11 @@
           <div class="col-lg-4">
 
             <div class="info">
-              <h3 class="text-center">Contato</h3>
-              <div class="info-item d-flex justify-content-sm-around align-items-center">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div class="info-item d-flex justify-content-sm-center justify-content-md-left align-items-center">
+                <div class="d-flex justify-content-left col-md-4">
+                  <i class="bi bi-geo-alt flex-shrink-0 d-flex justify-content-left"></i> 
+                </div>
+               
                 <div class="col-md-8">
                   <h4 class="text-center">Matriz:</h4>
                   <p class="text-center">Rua Braz Bernardino, 105, Centro, <br>Juiz de Fora - MG</p>
@@ -732,7 +730,10 @@
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex justify-content-sm-around align-items-center">
-                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div class="d-flex col-md-4 justify-content-left">
+                  <i class="bi bi-envelope flex-shrink-0"></i> 
+                </div>
+                
                 <div class="col-md-8" >
                   <h4 class="text-center">Email:</h4>
                   <p class="text-center">contato@mediclick.com.br</p>
@@ -740,7 +741,10 @@
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex justify-content-sm-around align-items-center">
-                <i class="bi bi-phone flex-shrink-0 justify-content-center text-center"></i>
+                <div class="d-flex col-md-4 justify-content-left">
+                  <i class="bi bi-phone flex-shrink-0 justify-content-center text-center"></i> 
+                </div>
+               
                 <div class="col-md-8">
                   <h4 class="text-center">Telefone:</h4>
                   <p class="text-center">(32) 3213-9000</p>
@@ -820,6 +824,13 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.modal-content').fitVids();
+  });
+</script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
