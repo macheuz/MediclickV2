@@ -24,7 +24,6 @@ h6 {
 }
 
 
-
 #paragrafoTitulo{
   color: white;
   text-align: center;
@@ -3566,3 +3565,16 @@ section {
   background: var(--color-primary);
   text-decoration: none;
 }
+
+.mb1{
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .mb1{
+    display: block !important;
+  }
+  .d1{
+    display: none !important;
+  }
+  }
