@@ -295,17 +295,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  const playBtn = document.querySelector(".play-btn");
-playBtn.addEventListener("click", () => {
-  const videoUrl = "https://www.youtube.com/embed/q6EpFf5Chwk"; // Replace VIDEO_ID with your YouTube video ID
-  const iframe = document.createElement("iframe");
-  iframe.setAttribute("src", videoUrl);
-  iframe.setAttribute("allowfullscreen", "");
-  iframe.style.width = "100%";
-  iframe.style.height = "100%";
-  const overlay = document.querySelector(".overlay");
-  overlay.replaceWith(iframe);
-});
+  const videoUrl = 'https://www.youtube.com/embed/q6EpFf5Chwk'; // Substitua VIDEO_ID pelo ID do seu vídeo no YouTube
+  const overlay = document.querySelector('.overlay');
+  
+  const iframe = document.createElement('iframe');
+  iframe.setAttribute('src', videoUrl);
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('autoplay', ''); 
+  iframe.setAttribute('muted', ''); // Adicionando o atributo muted
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  
+  overlay.parentNode.replaceChild(iframe, overlay);
 
 
   
