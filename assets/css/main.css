@@ -3584,5 +3584,65 @@ section {
   .d1{
     display: none !important;;
   }
+  .menuPlanos{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.containerPlanos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.planosMenu{
+    display: flex;
+    width: 92%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #0FA2BD;
+    margin: 5% 0;
+    border-radius: 30px;
+    background-color: var(--color-primary);
+}
+.tituloPlano{
+    display: flex;
+    width: 85%;
+    margin-top: 2.5%;
+  align-items: center;
+    justify-content: left;
+}
+.tituloPlano h3{
+    margin-left: 20%;
+    color: white;
+    text-align: left;
+}
+.plusIcon{
+    display: flex;
+    width: 15%;
+
+  align-items: center;
+    justify-content: left;
+}
+.plusIcon i{
+  color: white;
+}
+.conteudoPlanos{
+    display: none;
+    width: 78%;
+    transition: max-height 0.3s ease;
+}
+.conteudoPlanos ul{
+  list-style-type: none;
+}
+.conteudoPlanos li{
+  color:  var(--color-gray);;
+}
   }
   
