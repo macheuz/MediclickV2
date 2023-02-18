@@ -310,52 +310,12 @@ playBtn.addEventListener("click", () => {
 
   
 });
-function mostrarConteudo() {
-  var conteudo = document.getElementById("conteudoPlanos");
+function mostrarConteudo(numero) {
+  const conteudo = document.getElementById("conteudoPlanos" + numero);
   if (conteudo.style.display === "none") {
-    conteudo.style.display = "block";
+  conteudo.style.display = "block";
   } else {
-    conteudo.style.display = "none";
+  conteudo.style.display = "none";
   }
-}
-function mostrarConteudo2() {
-  var conteudo = document.getElementById("conteudoPlanos2");
-  if (conteudo.style.display === "none") {
-    conteudo.style.display = "block";
-  } else {
-    conteudo.style.display = "none";
   }
-}
-function mostrarConteudo3() {
-  var conteudo = document.getElementById("conteudoPlanos3");
-  if (conteudo.style.display === "none") {
-    conteudo.style.display = "block";
-  } else {
-    conteudo.style.display = "none";
-  }
-}
-function mostrarConteudo4() {
-  var conteudo = document.getElementById("conteudoPlanos4");
-  if (conteudo.style.display === "none") {
-    conteudo.style.display = "block";
-  } else {
-    conteudo.style.display = "none";
-  }
-}
-function mostrarConteudo5() {
-  var conteudo = document.getElementById("conteudoPlanos5");
-  if (conteudo.style.display === "none") {
-    conteudo.style.display = "block";
-  } else {
-    conteudo.style.display = "none";
-  }
-}
-function mostrarConteudo6() {
-  var conteudo = document.getElementById("conteudoPlanos6");
-  if (conteudo.style.display === "none") {
-    conteudo.style.display = "block";
-  } else {
-    conteudo.style.display = "none";
-  }
-}
 
