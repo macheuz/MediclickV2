@@ -83,7 +83,7 @@
 
   <section  id="hero-fullscreen" class="hero-fullscreen d-flex align-items-baseline justify-content-center mb1">
     <div id="containerTitulo" class="container d-flex flex-column align-items-center justify-content-start position-relative" data-aos="zoom-out">
-      <p style="" id="paragrafoTitulo">Cuidar da sua saúde nunca foi<br> tão fácil e acessível</p>
+      <p style="" id="paragrafoTitulo">Cuidar da sua saúde nunca<br> foi tão fácil e acessível</p>
       <div class="d-flex align-baseline">
 
           <a href="https://youtu.be/q6EpFf5Chwk" class="glightbox btn-watch-video d-flex align-items-center text-center"><i class="bi bi-play-circle"></i><span id="spanTitulo" class="text-center" >Apresentação</span></a>
@@ -475,7 +475,7 @@ fim over funciona-->
                   <li><i class="bi bi-check2"></i> <span>Atendimento 24 horas;</span></li>
                   <li><i class="bi bi-check2"></i> <span>Teletriagem + Telemedicina + Especialidades;</span></li>
                   <li><i class="bi bi-check2"></i> <span>Atenção primária à saúde;</span></li>
-                  <li><i class="bi bi-check2"></i> <span>Inicia com a equipe de enfermagem,  médicos da família e ainda a possibilidade de encaminhamento para médicos especialistas</span></li>
+                  <li><i class="bi bi-check2"></i> <span>Inicia com a equipe de enfermagem,  médicos da família e ainda a possibilidade de encaminhamento para médicos especialistas.</span></li>
                 </ul>
           </div>
           <!--conteudoPlanos-->
@@ -521,7 +521,7 @@ fim over funciona-->
               <li><i class="bi bi-check2"></i> <span>Via aplicativo;</span></li>
               <li><i class="bi bi-check2"></i> <span>Atendimento 24 horas por equipe de enfermagem;</span></li>
               <li><i class="bi bi-check2"></i> <span>Solicitação de atendimento 24h;</span></li>
-              <li><i class="bi bi-check2"></i> <span>Atendimento por psicólogos: de 2ª à 6ª feira das 8 às 20h.</span></li>
+              <li><i class="bi bi-check2"></i> <span>Atendimento por psicólogos de 2ª à 6ª feira das 8 às 20h.</span></li>
             </ul>
       </div>
       <!--conteudoPlanos-->
@@ -542,7 +542,7 @@ fim over funciona-->
           <ul>
               <li><i class="bi bi-check2"></i> <span>Via aplicativo;</span></li>
               <li><i class="bi bi-check2"></i> <span>Atendimento 24 horas por equipe de enfermagem;</span></li>
-              <li><i class="bi bi-check2"></i> <span>Atendimento por nutricionistas de 2ª à 6ª feira das 8 às 20h;</span></li>
+              <li><i class="bi bi-check2"></i> <span>Atendimento por nutricionistas de 2ª à 6ª feira das 8 às 20h.</span></li>
           </ul>
       </div>
       <!--conteudoPlanos-->
@@ -932,8 +932,33 @@ fim over funciona-->
 
           </div>
 
+          <div class="col-lg-8 d1" id="contato">
+            <form action="/forms/contact.php" method="post" role="form" class="php-email-form" >
+              <div class="row">
+                <div class="col-md-6 form-group" >
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nome" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea style="height: 100%;" class="form-control" name="message" placeholder="Mensagem" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Enviando</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Sua mensagem foi enviada. Muito obrigado!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar mensagem</button></div>
+            </form>
+          </div><!-- End Contact Form -->
 
-          <div class="col-lg-8" id="contato">
+
+          <div class="col-lg-8 mb1" id="contato">
             <form action="/forms/contact.php" method="post" role="form" class="php-email-form" >
               <div class="row">
                 <div class="col-md-6 form-group" >
