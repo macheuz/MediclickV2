@@ -3612,6 +3612,10 @@ section {
     border-radius: 4vh;
     background-color: var(--color-primary);
 }
+.backgroundM{
+  background-color: #257d8e ;
+  border: 1px solid #257d8e  ;
+}
 .tituloPlano{
     display: flex;
     width: 85%;
