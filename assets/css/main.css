@@ -2302,6 +2302,13 @@ section {
   font-size: 20px;
   color: var(--color-primary);
 }
+.faq .question-icon {
+  position: absolute;
+  top: 14px;
+  left: 25px;
+  font-size: 20px;
+  color: var(--color-primary);
+}
 
 .faq .accordion-button:after {
   position: absolute;
