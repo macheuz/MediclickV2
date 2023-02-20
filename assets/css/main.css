@@ -3603,10 +3603,16 @@ section {
 .mb1{
   display: none !important;
 }
+.mb2{
+  display: none !important;
+}
 
 @media (max-width: 900px) {
   .mb1{
     display: block !important;
+  }
+  .mb2{
+    display: flex !important;
   }
   .d1{
     display: none !important;;
