@@ -1187,7 +1187,7 @@ section {
 --------------------------------------------------------------*/
 .hero-fullscreen {
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   background: url("../img/notebook.jpeg") 30% center;
   background-size: cover;
   position: relative;
