@@ -3744,26 +3744,22 @@ color: #0FA2BD;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 20vh;
   width: 90%;
+  background-color: rgba(0, 192, 220, 1);
+  border-radius: 10px;
+  margin-bottom: 5%;
 }
-.tituloSubTitulo p{
-  text-align: center;
-  font-size: 20px;
-  color: #376972;
-}
-.tituloSubTitulo p:nth-of-type(2){
-  font-size: 16px;
-  color: #376972;
-}
+
 .tituloSubTitulo h1{
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 40px;
-  color: #00C0DC ;
+  color: white;
+  padding: 0 2%;
 }
 .imagemTele {
   display: flex;
