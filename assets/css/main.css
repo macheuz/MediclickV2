@@ -1185,7 +1185,7 @@ section {
   animation: pulse 1s infinite;
 }
 .btn-watch-video {
-  background-image: linear-gradient(90deg, #00dbde, #fc00ff);
+
   background-size: 0% 100%;
   background-position: left;
   background-repeat: no-repeat;
@@ -1521,7 +1521,7 @@ section {
     text-align: center;
   }
   #spanTitulo{
-    text-align: center;
+    text-align: left;
     margin-top: 7%;
   }
   #paragrafoTitulo{
