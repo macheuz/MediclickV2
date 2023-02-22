@@ -3884,11 +3884,11 @@ color: #0FA2BD;
 .containerApps{
   display: flex;
   flex-direction: column;
-  width: 95%;
-  height: 90%;
+  width: 75%;
+  height: 80%;
   justify-content: center;
   align-items: center;
-  background-color: #f7f4f4;
+  background-color: #f8f6f6;
   border-radius: 10px;
 
 }
@@ -3899,10 +3899,10 @@ color: #0FA2BD;
 }
 .iconesLoja i{
   font-size: 2em;
-  margin: 10%;
+  margin: 20%;
 }
 .iconesLoja a{
-  margin: 0 5%;
+  margin: 5% 10%;
   text-decoration: none;
   color: black;
 }
