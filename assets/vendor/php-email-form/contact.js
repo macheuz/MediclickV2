@@ -1,45 +1,48 @@
-$(function () {
-
-    // init the validator
-    // validator files are included in the download package
-    // otherwise download from http://1000hz.github.io/bootstrap-validator
-
-    $('#contact-form').validator();
-
-
-    // when the form is submitted
-    $('#contact-form').on('submit', function (e) {
-
-        // if the validator does not prevent form submit
-        if (!e.isDefaultPrevented()) {
-            var url = "contact.php";
-
-            // POST values in the background the the script URL
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: $(this).serialize(),
-                success: function (data)
-                {
-                    // data = JSON object that contact.php returns
-
-                    // we recieve the type of the message: success x danger and apply it to the 
-                    var messageAlert = 'alert-' + data.type;
-                    var messageText = data.message;
-
-                    // let's compose Bootstrap alert box HTML
-                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                    
-                    // If we have messageAlert and messageText
-                    if (messageAlert && messageText) {
-                        // inject the alert to .messages div in our form
-                        $('#contact-form').find('.messages').html(alertBox);
-                        // empty the form
-                        $('#contact-form')[0].reset();
-                    }
-                }
-            });
-            return false;
-        }
+function enviarFormulario() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+  
+    // Verifica se o nome, email e mensagem foram preenchidos
+    if (name == "" || email == "" || subject == "" || message == "") {
+      alert("Por favor, preencha todos os campos.");
+      return false;
+    }
+  
+    // Cria um objeto com os dados do formulário
+    var formData = {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message
+    };
+  
+    // Envia o formulário para o servidor
+    fetch("URL_DO_SERVIDOR", {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: {
+        "Content-Type": "application/json"
+      }
     })
-});
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Ocorreu um erro ao enviar o formulário.");
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Processa a resposta do servidor (se houver)
+      alert("O formulário foi enviado com sucesso!");
+    })
+    .catch(error => {
+      alert(error.message);
+    });
+  
+    // Limpa os campos do formulário após o envio
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("mensagem").value = "";
+  }
