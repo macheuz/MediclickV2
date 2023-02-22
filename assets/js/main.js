@@ -26,6 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
       window.scrollY > 40 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
     });
   }
+  const selectHeader1 = document.querySelector('#header1');
+  if (selectHeader1) {
+    document.addEventListener('scroll', () => {
+      window.scrollY > 70 ? selectHeader1.classList.add('sticked') : selectHeader1.classList.remove('sticked');
+    });
+  }
 
   /**
    * Navbar links active state on scroll
