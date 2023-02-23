@@ -3935,11 +3935,11 @@ color: #0FA2BD;
   align-items: center;
 
   }
-  .circle-container h1{
-    margin-top: -50%;
-    padding: 0 5%;
+  .circle-container p{
+    margin-top: -70%;
+    padding: 0 0%;
     text-align: center;
-    font-size: 17px
+    font-size: 17px;
   }
   
   .circle {
@@ -3950,7 +3950,7 @@ color: #0FA2BD;
   }
   
   .circle1 {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   animation: circle1 2s ease-in-out infinite;
   }
   
@@ -3963,7 +3963,7 @@ color: #0FA2BD;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f09035;
+    background-color: #72c6d3;
     animation: circle3 2s ease-in-out infinite;
   }
   
