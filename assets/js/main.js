@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const iframe = document.createElement('iframe');
   iframe.setAttribute('src', videoUrl);
   iframe.setAttribute('allowfullscreen', '');
-  iframe.setAttribute('autoplay', ''); 
+  iframe.setAttribute('autoplay', 'True'); 
   iframe.setAttribute('muted', ''); // Adicionando o atributo muted
   iframe.style.width = '100%';
   iframe.style.height = '100%';
