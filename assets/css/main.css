@@ -121,6 +121,7 @@ h6 {
   
 }
 
+
 .sliderInterno:first-child,
 .sliderInterno:nth-child(2) {
   display: flex; /* mostra apenas os dois primeiros sliders internos */
@@ -171,7 +172,13 @@ h6 {
   width: 75%;
 }
 .listaConteudo ul{
-  color: green;
+  list-style-type: none;
+}
+.listaConteudo i{
+  color: rgb(255, 138, 23);
+}
+.listaConteudo span{
+  margin-left: 2%;
 }
 .liMargem{
   margin: 3% 0%;
@@ -232,16 +239,17 @@ h6 {
   justify-content: center;
   align-items: center;
 }
+.blocoEsquerda span{
+  text-align: center;
+  color: white;
+}
 .blocoCentro{
   display: flex;
   width: calc(100%/3);
   justify-content: center;
   align-items: center;
 }
-.blocoCentro span{
-  text-align: center;
-  color: white;
-}
+
 .blocoDireita{
   display: flex;
   width: 33%;
