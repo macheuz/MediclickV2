@@ -326,5 +326,51 @@ function mostrarConteudo(numero) {
   }
   }
   
-
+  const sliders = document.querySelector('.sliders');
+  const sliderInternos = document.querySelectorAll('.sliderInterno');
+  const setaEsquerda = document.querySelector('.seta.esquerda');
+  const setaDireita = document.querySelector('.seta.direita');
+  let indiceSliderAtual = 0;
+  
+  // mostra apenas os três primeiros sliders internos por padrão
+  sliderInternos[0].style.display = 'flex';
+  sliderInternos[1].style.display = 'flex';
+  sliderInternos[2].style.display = 'flex';
+  
+  // adiciona o evento de clique à seta esquerda
+  setaEsquerda.addEventListener('click', () => {
+    if (indiceSliderAtual > 0) {
+      // esconde o conjunto de sliders internos atual
+      sliderInternos[indiceSliderAtual].style.display = 'none';
+      sliderInternos[indiceSliderAtual + 1].style.display = 'none';
+      sliderInternos[indiceSliderAtual + 2].style.display = 'none';
+  
+      // diminui o índice do slider atual
+      indiceSliderAtual -= 3;
+  
+      // mostra o novo conjunto de sliders internos
+      sliderInternos[indiceSliderAtual].style.display = 'flex';
+      sliderInternos[indiceSliderAtual + 1].style.display = 'flex';
+      sliderInternos[indiceSliderAtual + 2].style.display = 'flex';
+    }
+  });
+  
+  // adiciona o evento de clique à seta direita
+  setaDireita.addEventListener('click', () => {
+    if (indiceSliderAtual < sliderInternos.length - 3) {
+      // esconde o conjunto de sliders internos atual
+      sliderInternos[indiceSliderAtual].style.display = 'none';
+      sliderInternos[indiceSliderAtual + 1].style.display = 'none';
+      sliderInternos[indiceSliderAtual + 2].style.display = 'none';
+  
+      // aumenta o índice do slider atual
+      indiceSliderAtual += 3;
+  
+      // mostra o novo conjunto de sliders internos
+      sliderInternos[indiceSliderAtual].style.display = 'flex';
+      sliderInternos[indiceSliderAtual + 1].style.display = 'flex';
+      sliderInternos[indiceSliderAtual + 2].style.display = 'flex';
+    }
+  });
+  
 
