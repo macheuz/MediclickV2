@@ -370,7 +370,17 @@ function mostrarConteudo(numero) {
       sliderInternos[indiceSliderAtual].style.display = 'flex';
       sliderInternos[indiceSliderAtual + 1].style.display = 'flex';
       sliderInternos[indiceSliderAtual + 2].style.display = 'flex';
+    } else {
+      sliderInternos[indiceSliderAtual].style.display = 'none';
+      sliderInternos[indiceSliderAtual + 1].style.display = 'none';
+      sliderInternos[indiceSliderAtual + 2].style.display = 'none';
+      // exibe novamente os três primeiros sliders
+      sliderInternos[0].style.display = 'flex';
+      sliderInternos[1].style.display = 'flex';
+      sliderInternos[2].style.display = 'flex';
+  
+      // redefine o índice do slider atual
+      indiceSliderAtual = 0;
     }
   });
   
-
