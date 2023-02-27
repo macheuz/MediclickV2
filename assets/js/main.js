@@ -320,67 +320,72 @@ document.addEventListener('DOMContentLoaded', () => {
 function mostrarConteudo(numero) {
   const conteudo = document.getElementById("conteudoPlanos" + numero);
   if (conteudo.style.display === "none") {
-  conteudo.style.display = "block";
+    conteudo.style.display = "block";
   } else {
-  conteudo.style.display = "none";
+    conteudo.style.display = "none";
   }
+}
+
+const sliders = document.querySelector('.sliders');
+const sliderInternos = document.querySelectorAll('.sliderInterno');
+const setaEsquerda = document.querySelector('.seta.esquerda');
+const setaDireita = document.querySelector('.seta.direita');
+let indiceSliderAtual = 0;
+
+// mostra apenas os três primeiros sliders internos por padrão
+for (let i = 0; i < sliderInternos.length; i++) {
+  if (i < 3) {
+    sliderInternos[i].style.display = 'flex';
+  } else {
+    sliderInternos[i].style.display = 'none';
   }
-  
-  const sliders = document.querySelector('.sliders');
-  const sliderInternos = document.querySelectorAll('.sliderInterno');
-  const setaEsquerda = document.querySelector('.seta.esquerda');
-  const setaDireita = document.querySelector('.seta.direita');
-  let indiceSliderAtual = 0;
-  
-  // mostra apenas os três primeiros sliders internos por padrão
-  sliderInternos[0].style.display = 'flex';
-  sliderInternos[1].style.display = 'flex';
-  sliderInternos[2].style.display = 'flex';
-  
-  // adiciona o evento de clique à seta esquerda
-  setaEsquerda.addEventListener('click', () => {
-    if (indiceSliderAtual > 0) {
-      // esconde o conjunto de sliders internos atual
-      sliderInternos[indiceSliderAtual].style.display = 'none';
-      sliderInternos[indiceSliderAtual + 1].style.display = 'none';
-      sliderInternos[indiceSliderAtual + 2].style.display = 'none';
-  
-      // diminui o índice do slider atual
-      indiceSliderAtual -= 3;
-  
-      // mostra o novo conjunto de sliders internos
-      sliderInternos[indiceSliderAtual].style.display = 'flex';
-      sliderInternos[indiceSliderAtual + 1].style.display = 'flex';
-      sliderInternos[indiceSliderAtual + 2].style.display = 'flex';
+}
+
+// adiciona o evento de clique à seta esquerda
+setaEsquerda.addEventListener('click', () => {
+  if (indiceSliderAtual > 0) {
+    // esconde o conjunto de sliders internos atual
+    for (let i = indiceSliderAtual; i <= indiceSliderAtual + 2; i++) {
+      sliderInternos[i].style.display = 'none';
     }
-  });
-  
-  // adiciona o evento de clique à seta direita
-  setaDireita.addEventListener('click', () => {
-    if (indiceSliderAtual < sliderInternos.length - 3) {
-      // esconde o conjunto de sliders internos atual
-      sliderInternos[indiceSliderAtual].style.display = 'none';
-      sliderInternos[indiceSliderAtual + 1].style.display = 'none';
-      sliderInternos[indiceSliderAtual + 2].style.display = 'none';
-  
-      // aumenta o índice do slider atual
-      indiceSliderAtual += 3;
-  
-      // mostra o novo conjunto de sliders internos
-      sliderInternos[indiceSliderAtual].style.display = 'flex';
-      sliderInternos[indiceSliderAtual + 1].style.display = 'flex';
-      sliderInternos[indiceSliderAtual + 2].style.display = 'flex';
-    } else {
-      sliderInternos[indiceSliderAtual].style.display = 'none';
-      sliderInternos[indiceSliderAtual + 1].style.display = 'none';
-      sliderInternos[indiceSliderAtual + 2].style.display = 'none';
-      // exibe novamente os três primeiros sliders
-      sliderInternos[0].style.display = 'flex';
-      sliderInternos[1].style.display = 'flex';
-      sliderInternos[2].style.display = 'flex';
-  
-      // redefine o índice do slider atual
-      indiceSliderAtual = 0;
+
+    // diminui o índice do slider atual
+    indiceSliderAtual -= 3;
+
+    // mostra o novo conjunto de sliders internos
+    for (let i = indiceSliderAtual; i <= indiceSliderAtual + 2; i++) {
+      sliderInternos[i].style.display = 'flex';
     }
-  });
-  
+  }
+});
+
+// adiciona o evento de clique à seta direita
+setaDireita.addEventListener('click', () => {
+  if (indiceSliderAtual < sliderInternos.length - 3) {
+    // esconde o conjunto de sliders internos atual
+    for (let i = indiceSliderAtual; i <= indiceSliderAtual + 2; i++) {
+      sliderInternos[i].style.display = 'none';
+    }
+
+    // aumenta o índice do slider atual
+    indiceSliderAtual += 3;
+
+    // mostra o novo conjunto de sliders internos
+    for (let i = indiceSliderAtual; i <= indiceSliderAtual + 2; i++) {
+      sliderInternos[i].style.display = 'flex';
+    }
+  } else {
+    // esconde o conjunto de sliders internos atual
+    for (let i = indiceSliderAtual; i <= indiceSliderAtual + 2; i++) {
+      sliderInternos[i].style.display = 'none';
+    }
+
+    // exibe novamente os três primeiros sliders
+    for (let i = 0; i < 3; i++) {
+      sliderInternos[i].style.display = 'flex';
+    }
+
+    // redefine o índice do slider atual
+    indiceSliderAtual = 0;
+  }
+});
