@@ -1496,7 +1496,6 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.1);
 }
 .hero-fullscreen h2 span {
   color: var(--color-primary);
